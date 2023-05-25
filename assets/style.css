@@ -1,0 +1,240 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    height:10vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+header a{
+    color:#656262;
+    text-decoration-line:none;
+}
+header a:hover{
+    color:#000;
+}
+nav{
+    display:flex;
+    gap:2em;
+    margin-left:2em;
+    align-items:center;
+    flex-wrap:no-wrap;
+}
+nav a{
+    display:flex;
+    align-items:center;
+    flex-wrap:no-wrap;
+    gap:0.2em;
+}
+#link1, #link2{
+    display:relative;
+}
+#content1, #content2{
+    display:none;
+    position:absolute;
+    padding:1em;
+    background-color:#fff;
+    border-radius:20px;
+    box-shadow:5px 5px 10px #0000007c;
+}
+#content1 ul, #content2 ul{
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+#content1 li, #content2 li{
+    display:flex;
+    gap:0.5em;
+}
+#link1:hover #content1{
+    display:flex;
+    z-index:1000;
+}
+#link2:hover #content2{
+    display:flex; 
+    z-index:1000;  
+}
+#login{
+    display:flex;
+    align-items:center;
+    gap:2em;
+    margin-right:2em;
+}
+#signin{
+    padding:10px 20px;
+    border:2px solid #656262;
+    border-radius:10px;
+}
+#signin:hover{
+    border-color:#000;
+}
+main{
+
+    width:85vw;
+    margin-left:50%;
+    translate:-50%;
+    display:flex;
+}
+section{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+section h1{
+    padding:1em 1em 0 0;
+    font-size:5em;
+}
+section p{
+    width:400px;
+    color:#656262;
+    font-size:1.5em;
+}
+section button{
+    width:190px;
+    padding:10px 10px;
+    background-color:#000;
+    border-radius:10px;
+    color:#fff;
+    font-size:1.5em;
+    margin-top:1em;
+    border:1px solid #000;
+    outline:0;
+}
+section button:hover{
+    background-color:#fff;
+    color:#000;
+    border:1px solid #000;
+    border-radius:10px;
+}
+#brands{
+    height:35px;
+    width:80%;
+    display:flex;
+    justify-content:space-between;
+    margin-top:2em;
+}
+#brands img{
+    width:90px;
+}
+.target1:first-child{
+    display:flex;
+    flex-direction:column;
+    gap:0.8em;
+    list-style-type:none;
+    position:absolute;
+    top:50px;
+    left:60px;
+    padding:30px;
+    z-index:1000;
+    border-radius:20px;
+    display:none;
+    background-color:#fff;
+}
+.target1 li, .target2 li{
+    display:flex;
+    gap:0.5em;
+}
+.target2:last-child{
+    display:flex;
+    flex-direction:column;
+    gap:0.8em;
+    list-style-type:none;
+    position:absolute;
+    top:50px;
+    left:260px;
+    padding:30px;
+    z-index:1000;
+    border-radius:20px;
+    display:none;
+    background-color:#fff;
+}
+aside{
+    height:100%;
+    width:35%;
+    background-image:url("../images/image-hero-desktop.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+.attribution{
+    position:relative;
+    top:50px;
+    display:none;
+}
+@media screen and (max-width:800px){
+    body{
+        height:120vh;
+    }
+    header{
+        padding:1em;
+        overflow-x:none;
+    }
+    header a{
+        display:none;
+    }
+    main{
+        width:100vw;
+        flex-direction:column-reverse;
+    }
+    section{
+        align-items:center;
+        padding:0 1em 0 1em;
+    }
+    section h1{
+        font-size:2em;
+    }
+    section p{
+        text-align:center;
+    }
+    aside{
+        height:400px;
+        width:100%;
+        background-image:url("../images/image-hero-mobile.png");
+    }
+    #brands{
+        width:100vw;
+        padding:0 0.5em;
+    }
+    #brands img{
+        width:70px;
+    }
+    #menuBar{
+        width:250px;
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        top:60px;
+        right:-250px;
+        background-color:#fff;
+        padding:2em;
+        gap:1em;
+        z-index:1000;
+        display:none;
+    }
+    #menuBar a{
+        font-size:1.5em;
+        color:#656262;
+        display:block;
+    }
+    #menuBar a:nth-child(12){
+        margin-left:50%;
+        translate:-25%;
+    }
+    #menuBar #signin{
+        width:130px;
+        margin-left:50%;
+        translate:-60%;
+    }
+    .attribution{
+        display:block;
+    }
+}
