@@ -27,6 +27,8 @@ function openMenu(){
         imgMenu.src="images/icon-close-menu.svg";
         let menuBar = document.getElementById("menuBar");
         menuBar.style.display="flex";
+        menuBar.style.gap="30px";
+        menuBar.style.top="100px";
         menuBar.style.right="0px";
         option="close";
     }

@@ -15,6 +15,7 @@ header{
     display:flex;
     align-items:center;
     justify-content:space-between;
+    margin-bottom:40px;
 }
 header a{
     color:#656262;
@@ -87,22 +88,21 @@ main{
 }
 section{
     display:flex;
-    justify-content:space-between;
     flex-direction:column;
 }
 section h1{
-    padding:1em 1em 0 0;
-    font-size:5.3em;
+    padding:1em 0.5em 0 0;
+    font-size:3.7em;
 }
 section p{
     width:400px;
-    margin:2em 0;
+    margin:0.5em 0;
     color:#656262;
-    font-size:1.5em;
+    font-size:1.2em;
 }
 section button{
     width:190px;
-    padding:10px 10px;
+    padding:5px;
     background-color:#000;
     border-radius:10px;
     color:#fff;
@@ -119,10 +119,10 @@ section button:hover{
 }
 #brands{
     height:35px;
-    width:80%;
+    width:90%;
     display:flex;
     justify-content:space-between;
-    margin-top:2.5em;
+    margin-top:4.5em;
 }
 #brands img{
     width:90px;
@@ -161,7 +161,7 @@ section button:hover{
 }
 aside{
     height:100%;
-    width:35%;
+    width:40%;
     background-image:url("../images/image-hero-desktop.png");
     background-repeat:no-repeat;
     background-size:100% 100%;
