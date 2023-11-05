@@ -121,6 +121,7 @@ section button:hover{
     height:35px;
     width:90%;
     display:flex;
+    align-items:center;
     justify-content:space-between;
     margin-top:4.5em;
 }
